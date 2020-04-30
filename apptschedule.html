@@ -1,0 +1,119 @@
+<!--Leslie Favela
+	final project
+	apptschedule.html
+	4/15/19-->	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Appointments</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Raleway|Roboto+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<script type="text/javascript" src="javascript.js"></script>
+<style>#emailError,#nameError,#phoneError,#returnError,#clsError,#reasonError,#agreeError{color:red;)</style>
+<body>
+	<header><h1>Panton Eye Center</h1> 7740 W. NORTH AVE • ELMWOOD PARK, IL</header>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#2471A3;">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	<div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="about.html">About Panton</a>
+      <a class="nav-item nav-link" href="doctors.html">Our Doctors</a>
+      <a class="nav-item nav-link" target="_blank" href="https://www.quickappointments.com/3/#/home/pan1">Patient Portal</a>
+      <a class="nav-item nav-link" href="apptschedule.html"> Schedule Appointment</a>
+    </div>
+  </div>
+</nav><br>
+	<main><hr><br>
+		<h3>Schedule an Appointment</h3><br>
+		<form class="needs-validation" id="apptschedule" action="https://cpscserv.dom.edu/faculty/jhelwig/formConfirm.php" method="post">
+			<fieldset>
+			<legend>Contact Info</legend>
+			<span id="nameError"></span>
+			<div class="row">
+			<div class="form-inline col-xl-4">
+			  <label for="name">First Name:</label>&nbsp;&nbsp;
+			  <input type="text" name="fname" id="fname" class="form-control" placeholder=" First Name" required>
+			  
+			</div><br><br>
+			<div class="form-inline col-xl-4">
+			  <label for="name">Last Name:</label>&nbsp;&nbsp;
+			  <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required>
+			</div></div><br>
+			<div class="form-group col-xl-8">
+			<label for="email">Email Address:</label><span id="emailError"> </span>
+			<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+			</div><br>
+			
+		
+	<label for="phone">Phone Number:</label><span id="phoneError"> </span>
+	<div class="input-group mb-3 col-xl-5">
+		<div class="input-group-prepend">
+		
+		<select class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<div class="dropdown-menu">
+		<option value="home">Home</option>
+		<option value="mobile">Mobile</option>
+		<option value="work">Work</option>
+		</div></select>
+	</div>
+	<input name="phoneNumber" type="text" id="phoneNum" class="form-control"  required>	
+</div>		
+		</fieldset><br><hr>
+		<fieldset>	
+		<legend>Exam Info</legend>
+	<br>
+	
+		Are you a returning patient?<span id="returnError"> </span>
+		<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="yes" name="returning" value="yes" required>
+				<label class="custom-control-label" for="yes">Yes</label>
+		</div>
+		<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="no" name="returning" value="no" required>
+				<label class="custom-control-label" for="no">No</label>
+		</div><br>		
+		Are you interested in contact lenses?<span id="clsError"> </span>
+		<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="yescls" name="cls" required>
+				<label class="custom-control-label" for="yescls">Yes</label>
+		</div>
+		<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="nocls" name="cls" required>
+				<label class="custom-control-label" for="nocls">No</label>
+		</div><br>	
+		<div class="form-group">
+			<label for="message">What is the reason for your visit?</label><span id="reasonError"> </span>
+			<textarea class="form-control" id="reason" name="reason" cols="1" rows="3"></textarea>
+		</div>					
+		</fieldset><br>
+		<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="certify" name="certify" value="yes">
+					<label class="custom-control-label" for="certify">I verify that all information is correct</label>
+					<span id="agreeError"> </span>
+		</div><br>
+		
+		<button type="submit" class="btn btn-primary" id="sendForm">Submit</button>
+				&nbsp;
+				<button type="reset" class="btn btn-primary">Reset</button>
+				</div><br><br>
+		</form>
+	</main>
+	<footer><script>document.write(new Date().getFullYear());</script> &copy; PANTON EYE CENTER</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,113 @@
+<!--Leslie Favela
+	final project
+	index.html
+	4/15/19-->	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Welcome to the Panton Eye Center</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Raleway|Roboto+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+	@media only screen and (max-width:700px){
+		.container-fluid{padding-left:80px; padding-right:10px;}
+		.fling-minislide{display:none;}
+		img{width:30%;}
+	}
+	@media only screen and (min-width:701px){
+	.fling-minislide {width:100%; height:0px; padding-bottom:40%; overflow:hidden; position:relative; margin-top:5px;}	
+	.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+	@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+	.fling-minislide img:nth-child(4){animation-delay:0s;}
+	.fling-minislide img:nth-child(3){animation-delay:5s;}
+	.fling-minislide img:nth-child(2){animation-delay:10s;}
+	.fling-minislide img:nth-child(1){animation-delay:15s;}
+	img{width:15%;}
+	}
+</style>
+<body>
+<script type="text/javascript" src="javascript.js"></script>
+	<header><h1>Panton Eye Center</h1> 7740 W. NORTH AVE • ELMWOOD PARK, IL</header>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#2471A3;">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	<div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="about.html">About Panton</a>
+      <a class="nav-item nav-link" href="doctors.html">Our Doctors</a>
+      <a class="nav-item nav-link" target="_blank" href="https://www.quickappointments.com/3/#/home/pan1">Patient Portal</a>
+      <a class="nav-item nav-link" href="apptschedule.html"> Schedule Appointment</a>
+    </div>
+  </div>
+</nav>
+	<br>
+		<div class="fling-minislide">
+			<a target="_blank" href="https://www.quickappointments.com/3/#/home/pan1"><img src="ptportal.png" alt="patient portal ad"/></a>		
+			<img src="https://www.eyecarenow.com/wp-content/themes/eyecarenow/images/mast2018.png" alt="man with glasses"/>
+			<img src="http://www.moorevisioncenter.com/wp-content/uploads/2017/11/home-image-tablet-mobile.jpg" alt="glasses"/>
+			<img src="pantonlogo.png" alt="pantoneyelogo">
+		</div>
+	<main>
+		<h2>Quality Eye Care for your Entire Family</h2><br>
+		<p>Built on a tradition of service and excellence, Panton Eye Center has been the premier choice for eye care in the Chicago area.
+		We pride ourselves on providing friendly, individualized attention and the most technologically advanced vision correction options available today. 
+		From general eye exams and a full optical shop to more specialized care, including LASIK and laser cataract surgery, we offer a comprehensive array of 
+		services to meet all of your vision needs. 
+		</p><br><br><hr><br><br>
+		<h4>Visit our new Patient Portal to access your medical records online</h4><br>
+		
+			
+		<p>You may use the Patient Portal to access results from your last examination and to communicate on administrative matters (e.g., billing).
+		Please restrict medical communication to the phone by calling 708-452-7200 
+			so that we can respond. We have an answering service to direct phone calls 
+			of an urgent nature. A patient portal is a website for your personal health care. The online tool helps you to keep track of your health 
+			care provider visits, test results, billing, prescriptions, and so on. You can also e-mail your provider questions through the portal.
+			Many providers now offer patient portals. For access, you will need to set up an account. The service is free. A password is used so that
+			all of your information is private and secure.</p><br><a target="blank_" href="https://www.quickappointments.com/3/#/home/pan1"><img src="portalbtn.jpg"></a></div><br><br><hr>	
+	</main>
+	<div class="container-fluid">
+    <div class="row ml-3 m-2">
+        <div class="col-xs-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2">
+        <h6>OFFICE HOURS:</h6>Monday - 9 am to 5 pm<br>Tuesday - 9 am to 6 pm<br>Wednesday - Closed<br>Thursday - 9 am to 6 pm
+		<br>Friday - 9 am to 5 pm<br>Saturday - 9 am to 2 pm
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-xs-6 col-md-4 col-lg-2 col-xl-2 p-2 m-2">
+        <h6>Links</h6><a style="color:#A9CCE3;" href="index.html">Home</a><br>
+		<a style="color:#A9CCE3;" href="about.html">About Panton</a><br><a style="color:#A9CCE3;" href="doctors.html">Our Doctors</a>
+		<br><a target="_blank" style="color:#A9CCE3;" href="https://www.quickappointments.com/3/#/home/pan1">Patient Portal</a><br>
+		<a style="color:#A9CCE3;" href="apptschedule.html">Schedule Appointment</a>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="col-xs-6 col-md-4 col-lg-2 col-xl-2 p-2 m-2">
+        <h6>Contact Us</h6>Tel: 708-452-7200<br>Fax: 708-452-5777<br><br>WWW.PANTONEYE.COM
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="col-xs-6 col-md-4 col-lg-2 col-xl-2 p-2 m-2">
+        <h6>Hospital Affiliations</h6>
+		<a style="color:#A9CCE3;"target="blank_" href="http://www.gottliebhospital.org/">Gottlieb Hospital</a>
+		<br><a target="blank_" style="color:#A9CCE3;" href="https://www.roph.org/">Rush Oak Park Hospital</a><br>
+		<a target="blank_" style="color:#A9CCE3;" href="https://www.westlakehosp.com/">Westlake Hospital</a>
+		<br><a target="blank_" style="color:#A9CCE3;" href="https://www.westsuburbanmc.com/">West Suburban Hospital</a>
+        </div>
+    </div>
+	</div>
+<footer>
+	<script>document.write(new Date().getFullYear());</script> &copy; PANTON EYE CENTER
+</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
